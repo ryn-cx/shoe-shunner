@@ -146,7 +146,7 @@ function addButtonToShoes() {
             const percentageChange = (priceChange / interestedSavedPrice) * 100;
             buttonDivReal2.textContent = priceChange.toString();
 
-            if (percentageChange >= 0.5) {
+            if (percentageChange >= 10) {
                 divAsElement.style.backgroundColor = interestedPriceDropColor;
                 interestedButton.textContent = interestedSaveText;
             } else {
@@ -163,7 +163,7 @@ function addButtonToShoes() {
             const percentageChange = (priceChange / notInterestedSavedPrice) * 100;
             buttonDivReal2.textContent = priceChange.toString();
 
-            if (percentageChange >= 0.1) {
+            if (percentageChange >= 10) {
                 divAsElement.style.backgroundColor = notInterestedPriceDropColor;
                 notInterestedButton.textContent = notInterestedSaveText;
             } else {
